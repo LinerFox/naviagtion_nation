@@ -26,6 +26,17 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-100vw);
+}
+
+.overlay_slide_right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+.overlay_slide_left {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-100vw);
 }
 /* --- Nav Menu Items ------------------------------------ */
 nav,
@@ -94,7 +105,7 @@ nav li:nth-of-type(5) {
 }
 /* --- Menu Bars ------------------------------------ */
 
-.menu-bars {
+.menu_bars {
   position: fixed;
   top: 1rem;
   right: 2rem;
